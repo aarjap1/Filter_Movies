@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Kaushan+Script&display=swap');
+
+.login-title {
+    width: 270px;
+    padding-left: 100px;
+}
+
+body {
+    background-color: #2a809a;
+
+
+}
+
+.login-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title-1 {
+    font-size: 48px;
+    font-family: "Kaushan Script", cursive;
+    color: #05252f;
+
+}
+
+.title-2 {
+    font-size: 24px;
+    font-family: "Antic Slab", serif;
+
+}
