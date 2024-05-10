@@ -2,30 +2,47 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Kaushan+Script&display=swap');
 
-.login-title {
-    width: 270px;
-    padding-left: 100px;
-}
 
 body {
-    background-color: #2a809a;
 
+    background-image: url('movie-poster.png');
+    background-color: #9ACAD9;
+}
+
+
+.google {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 200px;
+
+}
+
+.google-icon-image {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.google-word {
+    font-size: 16px;
+    font-family: "Antic Slab", serif;
 
 }
 
 .login-title {
+    padding-top: 150px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
 }
 
 .title-1 {
     font-size: 48px;
     font-family: "Kaushan Script", cursive;
     color: #05252f;
-
+    margin-bottom: 15px;
 }
 
 .title-2 {
