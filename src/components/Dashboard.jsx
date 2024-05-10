@@ -13,7 +13,7 @@ const Navigation = () => {
       </div>
       <div>
         <input
-          class="form-control mr-sm-2"
+          className="search-bar"
           type="search"
           placeholder="Search"
           aria-label="Search"

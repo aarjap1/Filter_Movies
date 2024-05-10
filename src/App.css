@@ -2,16 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Kaushan+Script&display=swap');
 
 body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #69AEC4, #32535E);
+    width: 100vw;
+    height: 100vh;
 
-    background-image: url('movie-poster.png');
-    background-color: #9ACAD9;
+}
 
+.login-body {
+    background-image: url('movie-poster.png'), linear-gradient(to bottom, #69AEC4, #32535E);
+    width: 100vw;
+    height: 100vh;
 }
 
 .container {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+}
 
+div ul li {
+    padding-top: 15px;
+    font-family: "Antic Slab", serif;
 }
 
 .google {
@@ -53,14 +66,27 @@ nav ul {
     gap: 24px;
 }
 
+.search-bar {
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: 0;
 
-
+    background-color: transparent;
+    padding-top: 30px;
+    width: 240px;
+    margin-left: 500px;
+}
 
 .title-1 {
     font-size: 48px;
     font-family: "Kaushan Script", cursive;
     margin-bottom: 15px;
-    color: #32535E;
+    /* color: #32535E; */
+    background: linear-gradient(to right, #32535E, #4d899d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
 }
 
 .title-2 {
