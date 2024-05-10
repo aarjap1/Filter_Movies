@@ -5,8 +5,8 @@ import Navigation from "./components/Navigation";
 function App() {
   return (
     <>
-      <Login />
-      {/* <Navigation /> */}
+      {/* <Login /> */}
+      <Navigation />
     </>
   );
 }

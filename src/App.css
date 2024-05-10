@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Kaushan+Script&display=swap');
-
 
 body {
 
     background-image: url('movie-poster.png');
     background-color: #9ACAD9;
+
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
 
 .google {
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -27,6 +32,9 @@ body {
 .google-word {
     font-size: 16px;
     font-family: "Antic Slab", serif;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
 
 }
 
@@ -38,15 +46,25 @@ body {
     align-items: center;
 }
 
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+
+
+
 .title-1 {
     font-size: 48px;
     font-family: "Kaushan Script", cursive;
-    color: #05252f;
     margin-bottom: 15px;
+    color: #32535E;
 }
 
 .title-2 {
     font-size: 24px;
     font-family: "Antic Slab", serif;
-
+    font-weight: 200;
 }

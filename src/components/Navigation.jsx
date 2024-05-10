@@ -1,22 +1,25 @@
+import React from "react";
+
 const Navigation = () => {
   return (
-    <>
-      <div className="nav">
+    <nav className="container">
+      <div className="title-1">MovieMania</div>
+      <div>
+        <ul>
+          <li href="#">My Favorites</li>
+          <li href="#">Watch List</li>
+          <li href="#">Genre</li>
+        </ul>
+      </div>
+      <div>
         <input
           class="form-control mr-sm-2"
           type="search"
           placeholder="Search"
           aria-label="Search"
         />
-        <button
-          class="btn btn-outline-success my-2 my-sm-0"
-          className="search"
-          type="submit"
-        >
-          Search
-        </button>
       </div>
-    </>
+    </nav>
   );
 };
 
