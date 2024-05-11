@@ -16,10 +16,9 @@ body {
     height: 100vh;
 }
 
-.container {
+.navigator {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 div ul li {
@@ -64,13 +63,18 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 24px;
+    font-weight: 600;
+}
+
+.search {
+    margin-left: 450px;
 }
 
 .search-bar {
     border: 0;
     border-bottom: 1px solid black;
     outline: 0;
-
+    font-weight: bold;
     background-color: transparent;
     padding-top: 30px;
     width: 240px;
@@ -82,7 +86,7 @@ nav ul {
     font-family: "Kaushan Script", cursive;
     margin-bottom: 15px;
     /* color: #32535E; */
-    background: linear-gradient(to right, #32535E, #4d899d);
+    background: linear-gradient(to right, #10333e, #30839f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0.5px;
@@ -93,4 +97,11 @@ nav ul {
     font-size: 24px;
     font-family: "Antic Slab", serif;
     font-weight: 200;
+}
+
+.welcome {
+    font-family: "Antic Slab", serif;
+    margin-left: 90px;
+    margin-top: 65px;
+    font-weight: 900;
 }
