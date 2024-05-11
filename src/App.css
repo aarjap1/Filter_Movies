@@ -70,6 +70,11 @@ div ul li {
     padding-top: 200px;
 }
 
+
+.icon {
+    width: 60px;
+}
+
 .login-title {
     padding-top: 150px;
     margin: 0 auto;

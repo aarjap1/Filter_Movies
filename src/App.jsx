@@ -1,17 +1,25 @@
 import "./App.css";
+import { GoogleLogin } from "@react-oauth/google";
 import Login from "./components/Login";
 import Navigation from "./components/Dashboard";
 import { useState } from "react";
 
 function App() {
-  const [isGameStarted, setIsGameStarted] = useState(false);
+  const [isSignedIn, setIsSignedIn] = useState(false);
+  const [username, setUserName] = useState("Guest");
 
   const toggleSignIn = () => {
-    setIsGameStarted((prev) => !prev);
+    setIsSignedIn((prev) => !prev);
   };
 
   return (
-    <>{isGameStarted ? <Navigation /> : <Login toggle={toggleSignIn} />}</>
+    <>
+      {isSignedIn ? (
+        <Navigation username={"Welcome " + username} />
+      ) : (
+        <Login toggle={toggleSignIn} />
+      )}
+    </>
   );
 }
 

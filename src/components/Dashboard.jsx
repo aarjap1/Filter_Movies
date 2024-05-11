@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const Navigation = () => {
-  const [username, setUsername] = useState("Guest");
+const Navigation = ({ username }) => {
   return (
     <>
       <nav className="navigator">
@@ -23,7 +22,7 @@ const Navigation = () => {
           />
         </div>
       </nav>
-      <div className="welcome">Welcome {username}</div>
+      <div className="welcome">{username}</div>
     </>
   );
 };
