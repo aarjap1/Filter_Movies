@@ -32,7 +32,6 @@ div ul li {
     flex-direction: row;
     justify-content: center;
     padding-top: 200px;
-
 }
 
 .google-icon-image {
@@ -64,11 +63,10 @@ nav ul {
     list-style: none;
     gap: 24px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
-.search {
-    margin-left: 450px;
-}
+
 
 .search-bar {
     border: 0;
