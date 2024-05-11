@@ -5,9 +5,14 @@ const Login = ({ toggle }) => {
         <div className="title-1">MovieMania</div>
         <div className="title-2">Discover, Watch, Repeat</div>
       </div>
-      <div className="google" onClick={toggle}>
-        <div className="google-word">Login With Google</div>
-        <img className="google-icon-image" src="images\googleIcon.png" />
+      <div className="google">
+        <button
+          type="button"
+          className="google-sign-in-button"
+          onClick={toggle}
+        >
+          Sign in with Google
+        </button>
       </div>
     </div>
   );
