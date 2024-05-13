@@ -1,4 +1,10 @@
+import { useGoogleLogin } from "@react-oauth/google";
+import { jwtDecode } from "jwt-decode";
+
 const Login = ({ toggle }) => {
+  const login = useGoogleLogin({
+    onSuccess: (tokenResponse) => console.log(tokenResponse),
+  });
   return (
     <div className="login-body">
       <div className="login-title">
@@ -10,7 +16,19 @@ const Login = ({ toggle }) => {
         <button
           type="button"
           className="google-sign-in-button"
-          onClick={toggle}
+          onClick={() => {
+            login();
+            toggle();
+          }}
+          onSuccess={(credentialResponse) => {
+            const credentialResponseDecoded = jwtDecode(
+              credentialResponse.credential
+            );
+            console.log(credentialResponse.credential);
+          }}
+          onError={() => {
+            console.log("Login Failed");
+          }}
         >
           Sign in with Google
         </button>

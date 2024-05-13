@@ -1,5 +1,4 @@
 import "./App.css";
-import { GoogleLogin } from "@react-oauth/google";
 import Login from "./components/Login";
 import Navigation from "./components/Dashboard";
 import { useState } from "react";
@@ -15,7 +14,7 @@ function App() {
   return (
     <>
       {isSignedIn ? (
-        <Navigation username={"Welcome " + username} />
+        <Navigation username={"Welcome " + username} toggle={toggleSignIn} />
       ) : (
         <Login toggle={toggleSignIn} />
       )}

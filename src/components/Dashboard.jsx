@@ -1,11 +1,12 @@
 import React from "react";
-import { useState } from "react";
 
-const Navigation = ({ username }) => {
+const Navigation = ({ username, toggle }) => {
   return (
     <>
       <nav className="navigator">
-        <div className="title-1">MovieMania</div>
+        <div className="title-1" onClick={toggle}>
+          MovieMania
+        </div>
         <div>
           <ul>
             <li href="#">My Favorites</li>
