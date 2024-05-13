@@ -5,6 +5,7 @@ import "./index.css";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import Login from "./components/Login.jsx";
 import Navigation from "./components/Dashboard.jsx";
+import Error from "./components/Error.jsx";
 import {
   Route,
   RouterProvider,
@@ -17,7 +18,8 @@ const router = createBrowserRouter(
     <Route>
       <Route path="/login" element={<Login />} />
       <Route path="/dashboard" element={<Navigation />} />
-      <Route path="*" element={<Login />} />
+      <Route path="" element={<Login />} />
+      <Route path="*" element={<Error />} />
     </Route>
   )
 );
