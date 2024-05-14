@@ -7,7 +7,7 @@ body {
     background-image: linear-gradient(to bottom, #69AEC4, #32535E);
     width: 100vw;
     height: 100vh;
-
+    overflow: hidden;
 }
 
 .login-body {
